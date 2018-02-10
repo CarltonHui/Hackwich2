@@ -11,8 +11,6 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var firstLabel: UILabel!
     
-    let UILabel = "I did it!"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,8 +21,9 @@ class SecondViewController: UIViewController {
 
     }
     
-    @IBAction func changeColorButtonPressed(_ sender: UIButton) {
+    @IBAction func changeColorButtonPressed(_ sender: AnyObject) {
         self.view.backgroundColor=UIColor.blue
+    firstLabel.text = "I did it!"
 
     }
     
